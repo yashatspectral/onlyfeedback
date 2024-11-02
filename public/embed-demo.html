@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OnlyFeedback Gallery Demo</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div id="onlyfeedback-gallery"></div>
+  <script src="https://onlyfeedback.netlify.app/embed.js"></script>
+  <script>
+    window.addEventListener('onlyfeedbackReady', function() {
+      window.OnlyFeedback.init(
+        document.getElementById('onlyfeedback-gallery'),
+        {
+          title: "Get Expert Feedback",
+          subtitle: "Connect with top developers for honest product feedback"
+        }
+      );
+    });
+  </script>
+</body>
+</html>
